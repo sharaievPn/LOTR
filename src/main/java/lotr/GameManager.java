@@ -1,6 +1,13 @@
 package lotr;
 
 public class GameManager {
+    public static void main(String[] args) {
+        Character c1 = CharacterFactory.createCharacter();
+        Character c2 = CharacterFactory.createCharacter();
+        GameManager game = new GameManager();
+        game.fight(c1, c2);
+    }
+
     public void fight (Character c1, Character c2) {
         int counter = 1;
         String fstCharacter = c1.getClass().getSimpleName();
